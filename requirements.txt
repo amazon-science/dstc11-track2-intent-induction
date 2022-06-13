@@ -1,0 +1,14 @@
+numpy>=1.21.6
+# clustering algorithms, metrics
+scikit-learn>=1.1.1
+hyperopt==0.2.7
+# sentence embeddings for baselines
+sentence-transformers==2.2.0
+# used for computing minimum cost assignment
+scipy>=1.8.1
+# data IO
+pandas>=1.4.2
+# configuration management (Registrable, FromParams)
+allennlp>=2.9.3
+# for logging
+tqdm>=4.64.0
