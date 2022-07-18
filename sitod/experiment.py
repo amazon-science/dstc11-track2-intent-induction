@@ -130,7 +130,7 @@ class IntentClusteringExperiment(Experiment):
         experiment_dir: Path,
     ):
         # run clustering
-        if not (experiment_dir / OutputPaths.TURN_PREDICTIONS).exists() and not self._overwrite:
+        if not (experiment_dir / OutputPaths.TURN_PREDICTIONS).exists() or self._overwrite:
             # read dialogues and collect intent turns
             dialogues = self._dialog_reader.read_dialogues(data_root_dir / self._dialogues_path)
             intents_by_turn_id = get_intents_by_turn_id(dialogues)
