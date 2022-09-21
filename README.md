@@ -19,9 +19,9 @@ Yi Zhang
 ## Timeline
 
 * Development data release: June 13, 2022
-* Test data release: Middle of September
-* Submission of final results: End of September
-* Final result announcement: Early of October
+* Test data release: September 26th, 2022
+* Entry submission deadline: October 3rd, 2022
+* Final result announcement: Middle of October
 * Paper submission: Middle of November
 * Workshop: February or March 2023
 
