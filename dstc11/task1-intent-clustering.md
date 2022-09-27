@@ -50,6 +50,22 @@ The two baselines use averaged [GloVe](https://github.com/stanfordnlp/GloVe) emb
 [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) (a pre-trained sentence embedding
  model from [SentenceTransformers](https://github.com/UKPLab/sentence-transformers)) respectively.
 
+## Submissions
+During the testing phase, clustering turns are indicated directly in `dialogues.jsonl` files by
+turns with dummy intent labels, e.g. `..., "intents": ["DummyLabel"]}`.
+Annotations will be released at a later date.
+
+Run the provided validation script on your JSONL-formatted cluster predictions files:
+```bash
+python3 dstc11/validate_task_inputs.py path_to_your_predictions_file/predictions.json \
+--task 1 \
+--dialogues dstc11/development/dialogues.jsonl
+```
+If successful, you should see a message like:
+> Validation of path_to_your_predictions_file/predictions.json for Task 1 successful!
+
+Then follow the instructions at the [submission link](https://forms.gle/m2NWYm22LGGyEYtn9).
+
 ## Rules
 * Participation is welcome from any team (academic, corporate, non-profit, or government).
 * Teams can participate in either or both sub-tracks.

@@ -16,6 +16,12 @@ Yi Zhang
 
 **Contact:** dstc11-intent-induction (AT) amazon (DOT) com
 
+## News
+* **September 26th** - Test conversations released!
+  * Two domains: [Banking](/dstc11/test-banking) and [Finance](/dstc11/test-finance)
+  * [Submission form](https://forms.gle/m2NWYm22LGGyEYtn9) open until **October 3rd, 2022 (11:59pm Anywhere on Earth UTC-12)** 
+  * Submission [standalone validation script](/dstc11/task1-intent-clustering.md#Submissions) provided (see [Submissions](/dstc11/task1-intent-clustering.md#Submissions))
+
 ## Timeline
 
 * Development data release: June 13, 2022

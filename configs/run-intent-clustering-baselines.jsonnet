@@ -22,7 +22,11 @@ local ic_exp(baseline, embedding_model) = intent_clustering_experiment(
 {
     type: 'meta_experiment',
     run_id: 'intent-clustering-baselines',
-    datasets: ['development'],
+    datasets: [
+        'development',
+        'test-banking',
+        'test-finance',
+    ],
     experiments:  [
         ic_exp(clustering_baselines.kmeans, glove),
         ic_exp(clustering_baselines.kmeans, all_mpnet),

@@ -32,7 +32,11 @@ local exp(clustering_model, embedding_model) = baseline_open_intent_induction_ex
 {
     type: 'meta_experiment',
     run_id: 'open-intent-induction-baselines',
-    datasets: ['development'],
+    datasets: [
+        'development',
+        'test-banking',
+        'test-finance',
+    ],
     experiments:  [
         exp(clustering_baselines.kmeans, glove),
         exp(clustering_baselines.kmeans, all_mpnet),
