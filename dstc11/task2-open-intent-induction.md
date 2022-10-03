@@ -57,7 +57,7 @@ data (but in different domains).
 Task 2 re-uses the same clustering baselines from [Task 1](/dstc11/task1-intent-clustering.md).
 
 ## Submissions
-Run the provided validation script on your JSONL-formatted cluster predictions files:
+Run the provided validation script on your JSONL-formatted intent schema files:
 ```bash
 python3 dstc11/validate_task_inputs.py path_to_your_intent_schema/induced-intents.json \
 --task 2
