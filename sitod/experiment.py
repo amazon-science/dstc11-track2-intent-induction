@@ -17,7 +17,7 @@ import pandas as pd
 import torch
 from allennlp.common import Registrable
 
-from sitod.constants import OutputPaths, MetadataFields
+from sitod.constants import OutputPaths, MetadataFields, MetricNames
 from sitod.data import (
     get_intents_by_turn_id, get_utterances_by_turn_id, TurnPrediction,
     write_turn_predictions, read_intents, read_turn_predictions, DialogueDataset,
@@ -129,15 +129,15 @@ class IntentClusteringExperiment(Experiment):
         data_root_dir: Path,
         experiment_dir: Path,
     ):
+        # read dialogues and collect intent turns
+        dialogues = self._dialog_reader.read_dialogues(data_root_dir / self._dialogues_path)
+        intents_by_turn_id = get_intents_by_turn_id(dialogues)
+        logger.info(f'Read {len(dialogues)} dialogues and {len(intents_by_turn_id)} '
+                    f'intent turns from {data_root_dir / self._dialogues_path}')
+
         # run clustering
         if not (experiment_dir / OutputPaths.TURN_PREDICTIONS).exists() or self._overwrite:
-            # read dialogues and collect intent turns
-            dialogues = self._dialog_reader.read_dialogues(data_root_dir / self._dialogues_path)
-            intents_by_turn_id = get_intents_by_turn_id(dialogues)
             utterances_by_turn_id = get_utterances_by_turn_id(dialogues)
-            logger.info(f'Read {len(dialogues)} dialogues and {len(intents_by_turn_id)} '
-                        f'intent turns from {data_root_dir / self._dialogues_path}')
-
             label_assignments = self._intent_clustering_model.cluster_intents(
                 IntentClusteringContext(
                     DialogueDataset(data_root_dir.name, dialogues),
@@ -161,6 +161,8 @@ class IntentClusteringExperiment(Experiment):
         else:
             logger.info(f'Reading pre-computed predictions at {experiment_dir / OutputPaths.TURN_PREDICTIONS}')
         turn_predictions = read_turn_predictions(experiment_dir / OutputPaths.TURN_PREDICTIONS)
+        for prediction in turn_predictions:
+            prediction.reference_label = intents_by_turn_id[prediction.turn_id]
 
         # write metrics JSON
         metrics = compute_metrics_from_turn_predictions(turn_predictions, ignore_labels=self._ignored_labels)
@@ -263,7 +265,10 @@ class MetaExperiment(Experiment):
         experiments: List[Experiment],
         metadata: Dict[str, str] = None,
         datasets: List[str] = None,
-        initial_seed: int = 0
+        initial_seed: int = 0,
+        sort_by_fields: List[str] = None,
+        ascending: List[bool] = None,
+        skip_metrics: List[str] = None,
     ) -> None:
         """
         Initialize a meta experiment, which runs multiple experiments across a list of datasets and aggregates results.
@@ -272,11 +277,20 @@ class MetaExperiment(Experiment):
         :param metadata: dictionary containing metadata associated with experiment
         :param datasets: list of datasets
         :param initial_seed: random seed set before each experiment
+        :param sort_by_fields: fields to sort rows in resulting metrics tables
+        :param ascending: boolean list indicating sort direction for each field
+        :param skip_metrics: metrics to drop from summary
         """
         super().__init__(run_id, metadata)
         self._datasets = datasets
         self._experiments = experiments
         self._initial_seed = initial_seed
+        self._sort_by_fields = sort_by_fields if sort_by_fields else ['ACC', MetadataFields.RUN_ID]
+        self._ascending = ascending if ascending else [False, True]
+        if not skip_metrics:
+            skip_metrics = MetricNames.JSON_METRICS
+        self._skip_metrics = skip_metrics
+        assert len(self._ascending) == len(self._sort_by_fields)
 
     def _run_experiment(self, data_root_dir: Path, experiment_dir: Path):
         for experiment in self._experiments:
@@ -297,11 +311,14 @@ class MetaExperiment(Experiment):
                 fields_by_config[config][k].append(val)
                 fields[k].append(val)
             for k, val in metrics.items():
+                if k in self._skip_metrics:
+                    continue
                 fields_by_config[config][k].append(val)
                 fields[k].append(val)
 
-        df = pd.DataFrame(fields).sort_values(by=MetadataFields.DATASET)
-        df.to_csv((experiment_dir / OutputPaths.EXPERIMENTS), sep='\t', index=False, float_format='%.2f')
+        df = pd.DataFrame(fields).sort_values(by=[MetadataFields.DATASET] + self._sort_by_fields,
+                                              ascending=[True] + self._ascending)
+        df.to_csv((experiment_dir / OutputPaths.EXPERIMENTS), sep='\t', index=False, float_format='%.4f')
         logger.info('\n' + df.to_csv(sep='\t', index=False, float_format='%.2f'))
 
         # summarize with per-config metric averages
@@ -316,6 +333,6 @@ class MetaExperiment(Experiment):
             for key, average in means.items():
                 summary_fields[key].append(average)
 
-        df = pd.DataFrame(summary_fields).sort_values(by=MetadataFields.RUN_ID)
-        df.to_csv((experiment_dir / OutputPaths.SUMMARY), sep='\t', index=False, float_format='%.1f')
+        df = pd.DataFrame(summary_fields).sort_values(by=self._sort_by_fields, ascending=self._ascending)
+        df.to_csv((experiment_dir / OutputPaths.SUMMARY), sep='\t', index=False, float_format='%.4f')
         logger.info('\n' + df.to_csv(sep='\t', index=False, float_format='%.1f'))

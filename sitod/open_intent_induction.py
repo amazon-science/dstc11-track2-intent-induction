@@ -8,7 +8,7 @@ from typing import List, Optional
 from allennlp.common import Registrable
 
 from sitod.constants import DialogueAct
-from sitod.data import Intent, DialogueDataset
+from sitod.data import Intent, DialogueDataset, read_intents
 from sitod.intent_clustering import (
     IntentClusteringContext,
     IntentClusteringModel,
@@ -78,4 +78,34 @@ class BaselineIntentInductionModel(IntentInductionModel):
             ]
             intent = Intent(cluster_label, sorted_utterances)
             intents.append(intent)
+        return intents
+
+
+@IntentInductionModel.register('external_schema_intent_induction_model')
+class ExternalSchemaIntentInductionModel(IntentInductionModel):
+    """
+    Mock intent induction implementation that just reads from a pre-existing external schema file.
+    """
+
+    def __init__(
+        self,
+        schema_file_name: str = 'induced-intents.json',
+        drop_noise_cluster: bool = False,
+    ) -> None:
+        """
+        Initialize with schema file name.
+
+        :param schema_file_name: prediction file path relative to experiment directory
+        """
+        super().__init__()
+        self._schema_file_name = schema_file_name
+        self._drop_noise_cluster = drop_noise_cluster
+
+    def induce_intents(self, dataset: DialogueDataset, output_path: Optional[Path] = None) -> List[Intent]:
+        schema_path = output_path / self._schema_file_name
+        if not schema_path.exists():
+            raise ValueError(f'No pre-existing intent schema found at {schema_path}')
+        intents = read_intents(schema_path)
+        if self._drop_noise_cluster:
+            intents = [intent for intent in intents if intent.intent_id != '-1']
         return intents

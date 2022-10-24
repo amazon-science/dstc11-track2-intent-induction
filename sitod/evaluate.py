@@ -16,7 +16,7 @@ from sklearn.utils._testing import ignore_warnings
 
 from sitod.constants import OutputPaths
 from sitod.data import Intent, Dialogue, write_turn_predictions, TurnPrediction, read_turn_predictions
-from sitod.intent_clustering import SentenceEmbeddingModel
+from sitod.sentence_embedding_model import SentenceEmbeddingModel
 from sitod.metric import (
     compute_metrics_from_turn_predictions,
 )

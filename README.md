@@ -21,7 +21,9 @@ Yi Zhang
   * Two domains: [Banking](/dstc11/test-banking) and [Finance](/dstc11/test-finance)
   * [Submission form](https://forms.gle/m2NWYm22LGGyEYtn9) open until **October 3rd, 2022 (11:59pm Anywhere on Earth UTC-12)** 
   * Submission [standalone validation script](/dstc11/task1-intent-clustering.md#Submissions) provided (see [Submissions](/dstc11/task1-intent-clustering.md#Submissions))
-
+* **October 24th** - Ground truth intent labels, test utterances, all submitted entries, and raw results released
+  * [Task 1 Submissions](/dstc11/dstc11-submissions/1) and [Results](https://docs.google.com/spreadsheets/d/1QV3ZyodLkttaGAXFDVAKYKIFZW7X3hzdysaDhWOrpqA/edit?usp=sharing)
+  * [Task 2 Submissions](/dstc11/dstc11-submissions/2) and [Results](https://docs.google.com/spreadsheets/d/15K3vBDfAj_fzqK988rrESRuk4MTgyIOKIarKGZpGja4/edit?usp=sharing)
 ## Timeline
 
 * Development data release: June 13, 2022

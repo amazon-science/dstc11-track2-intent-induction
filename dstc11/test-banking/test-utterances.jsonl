@@ -1,2 +1,407 @@
-{"utterance": "Dummy test utterance 1", "utterance_id": "banking_0000", "intent": "DummyLabel"}
-{"utterance": "Dummy test utterance 2", "utterance_id": "banking_0001", "intent": "DummyLabel"}
+{"utterance": "Can I transfer some funds from my bank account to a different one? My withdrawal account number is zero six six nine seven two eight two. And the one that I'm trying to deposit to is one nine three seven three nine, fifty-seven, and I'm trying to send one thousand dollars.", "utterance_id": "banking_279", "intent": "InternalFundsTransfer"}
+{"utterance": "I wanna find the nearest ATM to Seattle, Washington, nine eight one zero five.", "utterance_id": "banking_210", "intent": "FindATM"}
+{"utterance": "I got billed twice for something I only purchased one of. Obvious error. Can you help?", "utterance_id": "banking_150", "intent": "DisputeCharge"}
+{"utterance": "I'd like to update my phone number on my account. pin is 1512", "utterance_id": "banking_402", "intent": "UpdatePhoneNumber"}
+{"utterance": "When are your physical branches open?", "utterance_id": "banking_029", "intent": "GetBranchHours"}
+{"utterance": "Hi there, so right now I'm visiting Dover, Delaware, and I'm just curious where the physical, the closest physical branch is to me.", "utterance_id": "banking_228", "intent": "FindBranch"}
+{"utterance": "What ATMs do you have in St. Louis?", "utterance_id": "banking_216", "intent": "FindATM"}
+{"utterance": "Hi there could you help me today? I need to close my account. For me it's just too hard to make the minimum requirements to avoid paying the the fee so I'm gonna close my account and move the funds to a different bank.", "utterance_id": "banking_115", "intent": "CloseBankAccount"}
+{"utterance": "Hello I need to report a transaction on my account that I did not intend to make. The credit card number associated is five eight six nine two three four zero eight one nine two nine nine two one. The purchase is about sixty-six dollars and seventy-two cents. And this occurred on October first two thousand nineteen. And my reason for disputing it is because I did not authorize this purchase.", "utterance_id": "banking_137", "intent": "DisputeCharge"}
+{"utterance": "I want to update my email address.", "utterance_id": "banking_382", "intent": "UpdateEmail"}
+{"utterance": "What is the limit on the amount that can be withdrawn from that account per day?", "utterance_id": "banking_275", "intent": "GetWithdrawalLimit"}
+{"utterance": "I'd rather not call next time. Can you show me how to set this up online?", "utterance_id": "banking_253", "intent": "SetUpOnlineBanking"}
+{"utterance": "I want to see my transaction history", "utterance_id": "banking_093", "intent": "CheckTransactionHistory"}
+{"utterance": "I need to send a payment via wire transfer.", "utterance_id": "banking_185", "intent": "ExternalWireTransfer"}
+{"utterance": "I was hoping to deposit some cash in one of my accounts. Is that possible from an ATM?", "utterance_id": "banking_006", "intent": "AskAboutCashDeposits"}
+{"utterance": "I need to make a cash deposit and was wondering where I could find one of your ATMs. Can you help?", "utterance_id": "banking_209", "intent": "FindATM"}
+{"utterance": "Hello, I want to close my bank account and transfer my remaining funds to a different account that I own.", "utterance_id": "banking_109", "intent": "CloseBankAccount"}
+{"utterance": "Can you tell me how much money I have saved?", "utterance_id": "banking_054", "intent": "CheckAccountBalance"}
+{"utterance": "Where are your branches in St. Louis?", "utterance_id": "banking_236", "intent": "FindBranch"}
+{"utterance": "What do I do if I saw a purchase I didn't make? Can I dispute it?", "utterance_id": "banking_164", "intent": "DisputeCharge"}
+{"utterance": "What time is your branch open? I was hoping to stop by first thing", "utterance_id": "banking_028", "intent": "GetBranchHours"}
+{"utterance": "Hi, I'd like to check the balance on my account. My bank account number is four two seven one five six seven four five zero.", "utterance_id": "banking_069", "intent": "CheckAccountBalance"}
+{"utterance": "Hey, could you help me update my address?", "utterance_id": "banking_355", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi, I want to open a savings account with Bank of America.", "utterance_id": "banking_317", "intent": "OpenBankingAccount"}
+{"utterance": "Good morning can you help me find the nearest branch location?", "utterance_id": "banking_219", "intent": "FindBranch"}
+{"utterance": "Hi, I was hoping if you could tell me how long it takes for wire transfers to be sent", "utterance_id": "banking_036", "intent": "AskAboutTransferTime"}
+{"utterance": "I think I hit a withdrawal limit. How much can I withdraw per day?", "utterance_id": "banking_269", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hi. I'd like to know the balance of my checking account please", "utterance_id": "banking_070", "intent": "CheckAccountBalance"}
+{"utterance": "Hey there can you help me find the closest branch to my location? My street address is seventy-eight ninety-three Rutherford Avenue.", "utterance_id": "banking_223", "intent": "FindBranch"}
+{"utterance": "Hi I'm seeing an charge on my account that I don't recognize so I need some help with that.", "utterance_id": "banking_142", "intent": "DisputeCharge"}
+{"utterance": "I'm closing one of my accounts with you and I'm just looking to transfer my remaining funds to one of my other accounts.", "utterance_id": "banking_127", "intent": "CloseBankAccount"}
+{"utterance": "I'd like to open an account with you, can you walk me through that?", "utterance_id": "banking_323", "intent": "OpenBankingAccount"}
+{"utterance": "I need to make a cash deposit. Can I do it at one of your ATMs?", "utterance_id": "banking_004", "intent": "AskAboutCashDeposits"}
+{"utterance": "Transfer three hundred from checking to savings", "utterance_id": "banking_299", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi, I just moved here and I would like to open a new bank account.", "utterance_id": "banking_315", "intent": "OpenBankingAccount"}
+{"utterance": "I'm calling to inform you of a fraudulent transaction on mystatement.", "utterance_id": "banking_160", "intent": "DisputeCharge"}
+{"utterance": "Hi, so I live on Brady Street, in Milwaukee, Wisconsin. And I'm just looking for the closest branch so I can go in.", "utterance_id": "banking_233", "intent": "FindBranch"}
+{"utterance": "I need to transfer some money to my checking account", "utterance_id": "banking_296", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi, can you help me find the closest ATM? I live on forty-two seventy-three Birch Street.", "utterance_id": "banking_206", "intent": "FindATM"}
+{"utterance": "I just wanted some help updating my address.", "utterance_id": "banking_359", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi I want to change my email address thanks.", "utterance_id": "banking_375", "intent": "UpdateEmail"}
+{"utterance": "Hi could you help me find the closest ATM to my location?", "utterance_id": "banking_203", "intent": "FindATM"}
+{"utterance": "Can you send me a log of my most recent purchases on my credit card? I need to verify some transactions", "utterance_id": "banking_084", "intent": "CheckTransactionHistory"}
+{"utterance": "Hey there, I think my credit card has been stolen or maybe I just lost it. But I need to, you know, take those steps to close it.", "utterance_id": "banking_332", "intent": "ReportLostStolenCard"}
+{"utterance": "Good morning. I need to change my email address", "utterance_id": "banking_369", "intent": "UpdateEmail"}
+{"utterance": "Could you give me some information on how to manage my account online?", "utterance_id": "banking_240", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi there I was hoping you could tell me the balance of my checking account", "utterance_id": "banking_065", "intent": "CheckAccountBalance"}
+{"utterance": "Hi could you help me check the balance on my account number five six six five eight nine seven five four two two one?", "utterance_id": "banking_062", "intent": "CheckAccountBalance"}
+{"utterance": "View recent purchases", "utterance_id": "banking_098", "intent": "CheckTransactionHistory"}
+{"utterance": "Hi, good morning. I need to update my email address for my business.", "utterance_id": "banking_376", "intent": "UpdateEmail"}
+{"utterance": "Yep, I was hoping to update my billing address. Can you help with that?", "utterance_id": "banking_364", "intent": "UpdateStreetAddress"}
+{"utterance": "Where can I find the closest physical branch to where I'm at? I'm at ninety-one dash fifty-four thirty-one Kapolei Parkway, in the city Kapolei, Hawaii, nine six seven zero seven, thanks.", "utterance_id": "banking_237", "intent": "FindBranch"}
+{"utterance": "Daily withdrawal limit", "utterance_id": "banking_263", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hello there I need to change my email address please", "utterance_id": "banking_370", "intent": "UpdateEmail"}
+{"utterance": "Can you tell me the maximum withdrawal that I can make?", "utterance_id": "banking_262", "intent": "GetWithdrawalLimit"}
+{"utterance": "Out of curiosity, how much could one withdraw from an account per day?", "utterance_id": "banking_273", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hello I would like to open up an account with the bank. My first name is Jenny, my last name is Lee, my date of birth is October eighteenth, nineteen eighty-five. My social security number is zero eight five three six nine five two two. And the security question that I would like to choose is what is your pet's first name. And my pet's name is Doodles.", "utterance_id": "banking_307", "intent": "OpenBankingAccount"}
+{"utterance": "Are you able to help me close one of my accounts?", "utterance_id": "banking_103", "intent": "CloseBankAccount"}
+{"utterance": "I was hoping to open up a new bank account with you guys, is that something you're able to help out with?", "utterance_id": "banking_322", "intent": "OpenBankingAccount"}
+{"utterance": "What purchases did I make on my credit card yesterday?", "utterance_id": "banking_101", "intent": "CheckTransactionHistory"}
+{"utterance": "Update cell phone number please.", "utterance_id": "banking_404", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hello, I wanna find the closest ATM.", "utterance_id": "banking_199", "intent": "FindATM"}
+{"utterance": "Hi I'd like to report a stolen credit card. The number is one four two six eight nine nine five four eight six three.", "utterance_id": "banking_333", "intent": "ReportLostStolenCard"}
+{"utterance": "I saw a notification. Could you tell me what my last charge was. On my debit card.", "utterance_id": "banking_092", "intent": "CheckTransactionHistory"}
+{"utterance": "Hi there. How much can I take out per day?", "utterance_id": "banking_265", "intent": "GetWithdrawalLimit"}
+{"utterance": "I'm trying to find out the upper limit for withdrawals", "utterance_id": "banking_270", "intent": "GetWithdrawalLimit"}
+{"utterance": "Need to close out my checking account today", "utterance_id": "banking_131", "intent": "CloseBankAccount"}
+{"utterance": "Can you send me the address of your closest ATM", "utterance_id": "banking_194", "intent": "FindATM"}
+{"utterance": "What are your business days? I was hoping to stop by to make a deposit.", "utterance_id": "banking_022", "intent": "GetBranchHours"}
+{"utterance": "Hi, I was wondering if you can help me check the balance of my account please.", "utterance_id": "banking_068", "intent": "CheckAccountBalance"}
+{"utterance": "Hi, I would like to update my address.", "utterance_id": "banking_358", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi there, I need to report a stolen credit card.", "utterance_id": "banking_335", "intent": "ReportLostStolenCard"}
+{"utterance": "Good morning, please help me check the balance of an existing account. The banking the bank account number is eight nine zero seven eight six five four three two.", "utterance_id": "banking_058", "intent": "CheckAccountBalance"}
+{"utterance": "What options do you offer for online banking?", "utterance_id": "banking_257", "intent": "SetUpOnlineBanking"}
+{"utterance": "What is the current balance on my credit card?", "utterance_id": "banking_081", "intent": "CheckAccountBalance"}
+{"utterance": "I'm really upset right now but my credit card has been stolen.", "utterance_id": "banking_343", "intent": "ReportLostStolenCard"}
+{"utterance": "I was wondering if you have any branch locations in Chicago", "utterance_id": "banking_235", "intent": "FindBranch"}
+{"utterance": "Hi I wanna wire sixty dollars from my account to a different account at Chase.", "utterance_id": "banking_177", "intent": "ExternalWireTransfer"}
+{"utterance": "Hi there. I need to wire a payment to another bank.", "utterance_id": "banking_180", "intent": "ExternalWireTransfer"}
+{"utterance": "I'm planning to close one of my accounts with you. Can you help with that?", "utterance_id": "banking_129", "intent": "CloseBankAccount"}
+{"utterance": "What time am I able to visit a branch?", "utterance_id": "banking_026", "intent": "GetBranchHours"}
+{"utterance": "Hello could you help me get the closest ATM to where I'm currently situated?", "utterance_id": "banking_198", "intent": "FindATM"}
+{"utterance": "Hi I'd like to transfer funds from my savings account to my checking account.", "utterance_id": "banking_287", "intent": "InternalFundsTransfer"}
+{"utterance": "Hello, I need to transfer some money to my checking account.", "utterance_id": "banking_285", "intent": "InternalFundsTransfer"}
+{"utterance": "I decided to cancel my card and close the account. Can you assist me please?", "utterance_id": "banking_118", "intent": "CloseBankAccount"}
+{"utterance": "Yeah, I wanted to transfer funds from one of my accounts to another one. Is that possible?", "utterance_id": "banking_304", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi there, I want to update my cell number on file", "utterance_id": "banking_393", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hey, are there any ATMs that are nearby?", "utterance_id": "banking_202", "intent": "FindATM"}
+{"utterance": "Are you able to help me view my recent transactions? I need to look over a few things", "utterance_id": "banking_082", "intent": "CheckTransactionHistory"}
+{"utterance": "An airline I purchased a ticket from canceled my flight and is not giving me a refund. Can I dispute the charge?", "utterance_id": "banking_134", "intent": "DisputeCharge"}
+{"utterance": "Help with phone number update", "utterance_id": "banking_391", "intent": "UpdatePhoneNumber"}
+{"utterance": "How do I use your app? I want to get set up for online banking?", "utterance_id": "banking_247", "intent": "SetUpOnlineBanking"}
+{"utterance": "Do you offer online banking?", "utterance_id": "banking_242", "intent": "SetUpOnlineBanking"}
+{"utterance": "Good afternoon, could you help me update my address?", "utterance_id": "banking_348", "intent": "UpdateStreetAddress"}
+{"utterance": "Hello, I wanna find the bank branch closest to me.", "utterance_id": "banking_221", "intent": "FindBranch"}
+{"utterance": "I think there was a billing error and I'd like to dispute the charge. Is that possible?", "utterance_id": "banking_157", "intent": "DisputeCharge"}
+{"utterance": "Hi there. I am going to close my account and if possible would like to do it over the phone.", "utterance_id": "banking_116", "intent": "CloseBankAccount"}
+{"utterance": "Do your ATMs accept cash deposits?", "utterance_id": "banking_002", "intent": "AskAboutCashDeposits"}
+{"utterance": "Hi, I'd like to find the closest physical branch to where I'm at. I'm in thirteen three hundred forty-seven Westheimer Road, Houston, Texas, seven seven zero eighty-two. Thanks.", "utterance_id": "banking_231", "intent": "FindBranch"}
+{"utterance": "What is my checking account balance?", "utterance_id": "banking_080", "intent": "CheckAccountBalance"}
+{"utterance": "I want to change my e-mail address", "utterance_id": "banking_380", "intent": "UpdateEmail"}
+{"utterance": "Hello, I would like to check the balance of my account.", "utterance_id": "banking_060", "intent": "CheckAccountBalance"}
+{"utterance": "I'm trying to update my email.", "utterance_id": "banking_385", "intent": "UpdateEmail"}
+{"utterance": "Is there a limit on withdrawals?", "utterance_id": "banking_271", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hello. How do I check my purchase history?", "utterance_id": "banking_088", "intent": "CheckTransactionHistory"}
+{"utterance": "Can you help me block my card? I think it was stolen", "utterance_id": "banking_326", "intent": "ReportLostStolenCard"}
+{"utterance": "How long from now can I expect the payment to be received?", "utterance_id": "banking_038", "intent": "AskAboutTransferTime"}
+{"utterance": "I'd like to report a stolen card. What should I do?", "utterance_id": "banking_341", "intent": "ReportLostStolenCard"}
+{"utterance": "Do I need to write a dispute letter, or can you help me dispute the charge?", "utterance_id": "banking_136", "intent": "DisputeCharge"}
+{"utterance": "Yeah, just looking to find the closest branch to where I live. Could you help me with that?", "utterance_id": "banking_238", "intent": "FindBranch"}
+{"utterance": "I moved to Boston recently and was hoping you could help me find one of your branches near me.", "utterance_id": "banking_234", "intent": "FindBranch"}
+{"utterance": "What days of the week are your branches open?", "utterance_id": "banking_024", "intent": "GetBranchHours"}
+{"utterance": "Hey, good morning. My name is Robert Russell and I'm trying to open up a bank account with you today.", "utterance_id": "banking_310", "intent": "OpenBankingAccount"}
+{"utterance": "I'd like to check the balance of my existing account please.", "utterance_id": "banking_078", "intent": "CheckAccountBalance"}
+{"utterance": "Hi there. Could you tell me the total amount I have right now in checking?", "utterance_id": "banking_067", "intent": "CheckAccountBalance"}
+{"utterance": "I would like to close my account at the bank and transfer all the remaining funds to a different account. So my current account is two ninety-three, six twenty sixty is the one I wanna close.", "utterance_id": "banking_125", "intent": "CloseBankAccount"}
+{"utterance": "Close my savings account", "utterance_id": "banking_105", "intent": "CloseBankAccount"}
+{"utterance": "Yeah my credit card might've been stolen this morning, is there any way you guys can help me?", "utterance_id": "banking_344", "intent": "ReportLostStolenCard"}
+{"utterance": "I need to update my work phone number.", "utterance_id": "banking_398", "intent": "UpdatePhoneNumber"}
+{"utterance": "I'm looking for one of your ATMs. Can you help me find one?", "utterance_id": "banking_212", "intent": "FindATM"}
+{"utterance": "Do I need to go to a branch to deposit cash, or can I do it at an ATM?", "utterance_id": "banking_001", "intent": "AskAboutCashDeposits"}
+{"utterance": "What time do you open on business days?", "utterance_id": "banking_027", "intent": "GetBranchHours"}
+{"utterance": "Hello. Kindly change email address", "utterance_id": "banking_372", "intent": "UpdateEmail"}
+{"utterance": "I need to wire some money to another account, are you able to help with that?", "utterance_id": "banking_188", "intent": "ExternalWireTransfer"}
+{"utterance": "Can you show me the balance of my savings account?", "utterance_id": "banking_053", "intent": "CheckAccountBalance"}
+{"utterance": "Check transaction history please", "utterance_id": "banking_086", "intent": "CheckTransactionHistory"}
+{"utterance": "I want to cancel and close my credit card ASAP", "utterance_id": "banking_121", "intent": "CloseBankAccount"}
+{"utterance": "Help change email please", "utterance_id": "banking_374", "intent": "UpdateEmail"}
+{"utterance": "I'm having trouble setting up the app for online banking. Can you help?", "utterance_id": "banking_254", "intent": "SetUpOnlineBanking"}
+{"utterance": "Yeah could you help me send a wire transfer? I want to send it to my friend's bank account.", "utterance_id": "banking_191", "intent": "ExternalWireTransfer"}
+{"utterance": "What are the hours for your branches in LA?", "utterance_id": "banking_021", "intent": "GetBranchHours"}
+{"utterance": "Update my cell number.", "utterance_id": "banking_405", "intent": "UpdatePhoneNumber"}
+{"utterance": "I noticed a fraudulent payment on statement and would like to cancel it.", "utterance_id": "banking_153", "intent": "DisputeCharge"}
+{"utterance": "Can you tell me if any branches will be open on Sunday?", "utterance_id": "banking_012", "intent": "GetBranchHours"}
+{"utterance": "Hi, I'd like to know what is the closest physical branch to me?", "utterance_id": "banking_232", "intent": "FindBranch"}
+{"utterance": "Can you help me with an international wire transfer?", "utterance_id": "banking_167", "intent": "ExternalWireTransfer"}
+{"utterance": "Can you help me see my transactions?", "utterance_id": "banking_083", "intent": "CheckTransactionHistory"}
+{"utterance": "I'd like to close all of my accounts with you today.", "utterance_id": "banking_126", "intent": "CloseBankAccount"}
+{"utterance": "Will your ATM allow me to deposit cash?", "utterance_id": "banking_009", "intent": "AskAboutCashDeposits"}
+{"utterance": "Hi, I need to report a lost credit card and pause its use.", "utterance_id": "banking_338", "intent": "ReportLostStolenCard"}
+{"utterance": "Hello there I would like to transfer funds from one account to another. My withdrawal bank account number is one seven five zero nine two eight three seven five eight one. The deposit bank account number is nine nine four eight seven two eight four zero four seven one. I would like to transfer five hundred dollars.", "utterance_id": "banking_284", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi. I'm in need of some quick cash. I'd like you to point me to the closest ATM.", "utterance_id": "banking_208", "intent": "FindATM"}
+{"utterance": "Hi, I just wanted to check on something because it seems like there's a log of a purchase that I didn't make so I wanted to check if everything's all right.", "utterance_id": "banking_146", "intent": "DisputeCharge"}
+{"utterance": "I was just doing my budget and saw a transaction that I didn't authorize and I'd like some help dealing with that.", "utterance_id": "banking_159", "intent": "DisputeCharge"}
+{"utterance": "Hi I just want to know, what is the closest branch to me?", "utterance_id": "banking_225", "intent": "FindBranch"}
+{"utterance": "Hi I want to open a checking account.", "utterance_id": "banking_311", "intent": "OpenBankingAccount"}
+{"utterance": "Hello, I'd like to do a domestic wire transfer.", "utterance_id": "banking_175", "intent": "ExternalWireTransfer"}
+{"utterance": "Yes I would like to report that my credit card has been lost. My number is five three four seven six four five zero eight six one four two four four eight I lost it around September thirteenth. I think the last thing I bought was McDonald's.", "utterance_id": "banking_346", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi, I was just looking to transfer some funds from account five eight nine nine seven six five four to my other bank account eight six five nine seven two one. And I'd like that to be fifteen dollars.", "utterance_id": "banking_291", "intent": "InternalFundsTransfer"}
+{"utterance": "I'm not sure how to do this over the android app. Can you show me how to set it up?", "utterance_id": "banking_255", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi I'm just wanted to report that my credit card was stolen. The credit card number is four one four seven two zero eight nine nine eight seven seven six five five five. I lost it on September first and I think I last spent the money at Metro Market.", "utterance_id": "banking_334", "intent": "ReportLostStolenCard"}
+{"utterance": "After some thought, I decided to close one of my accounts. Can you help me transfer the rest of my funds to a different account?", "utterance_id": "banking_102", "intent": "CloseBankAccount"}
+{"utterance": "Hello I want to do an internal transfer of funds from one account to another.", "utterance_id": "banking_283", "intent": "InternalFundsTransfer"}
+{"utterance": "I'd like to do my banking online. Can you show me how to set that up?", "utterance_id": "banking_251", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi, my name is Lance Armstrong, and I'd like to open an account.", "utterance_id": "banking_319", "intent": "OpenBankingAccount"}
+{"utterance": "I have to change my home phone number", "utterance_id": "banking_395", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi I'm gonna be moving states soon and I wanted to close my account and then transfer the remaining funds to a different one. Is that possible?", "utterance_id": "banking_114", "intent": "CloseBankAccount"}
+{"utterance": "Good morning this is pretty urgent, I need you to pull up my account so I can check the balance.", "utterance_id": "banking_057", "intent": "CheckAccountBalance"}
+{"utterance": "Yeah I wanna transfer some funds from one of my accounts to another. Same bank.", "utterance_id": "banking_302", "intent": "InternalFundsTransfer"}
+{"utterance": "I'm looking for an ATM near me in New York", "utterance_id": "banking_211", "intent": "FindATM"}
+{"utterance": "I need to change the phone number on my account. The pin is 1251.", "utterance_id": "banking_396", "intent": "UpdatePhoneNumber"}
+{"utterance": "What's the normal wait time for a wire transfer to go through?", "utterance_id": "banking_049", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi there can you assist me in finding the nearest ATM in my vicinity? I'm located at this address, it's one eight six eight seven Santa Rosa Drive. That would be in Detroit, Michigan.", "utterance_id": "banking_205", "intent": "FindATM"}
+{"utterance": "Hello, I'd like to update my address to seven four three Mason Lane.", "utterance_id": "banking_354", "intent": "UpdateStreetAddress"}
+{"utterance": "I need to make a wire transfer.", "utterance_id": "banking_184", "intent": "ExternalWireTransfer"}
+{"utterance": "Good afternoon, I'm looking to close down my account. I need to transfer the remaining funds to a different account of mine. Thank you.", "utterance_id": "banking_106", "intent": "CloseBankAccount"}
+{"utterance": "I want to find the closest ATM to Tustin, California.", "utterance_id": "banking_192", "intent": "FindATM"}
+{"utterance": "Do your branches in Chicago have ATMs?", "utterance_id": "banking_195", "intent": "FindATM"}
+{"utterance": "Hello. I was wondering how long it typically takes for a payment to go through via wire transfer.", "utterance_id": "banking_033", "intent": "AskAboutTransferTime"}
+{"utterance": "How do I get online banking set up?", "utterance_id": "banking_246", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi, I'm looking to open a new account.", "utterance_id": "banking_318", "intent": "OpenBankingAccount"}
+{"utterance": "I need to dispute a charge for something that I bought never received", "utterance_id": "banking_151", "intent": "DisputeCharge"}
+{"utterance": "Any of your cash machines nearby me?", "utterance_id": "banking_193", "intent": "FindATM"}
+{"utterance": "What's your nearest cash machine.", "utterance_id": "banking_217", "intent": "FindATM"}
+{"utterance": "How much money do I owe right now on my credit card?", "utterance_id": "banking_073", "intent": "CheckAccountBalance"}
+{"utterance": "I saw a purchase on my statement that I definitely didn't make. What do I do?", "utterance_id": "banking_156", "intent": "DisputeCharge"}
+{"utterance": "How do I see what transactions I've made recently?", "utterance_id": "banking_090", "intent": "CheckTransactionHistory"}
+{"utterance": "Can I change my phone number", "utterance_id": "banking_387", "intent": "UpdatePhoneNumber"}
+{"utterance": "I was just like help with an address update.", "utterance_id": "banking_363", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi can you please tell me when my payment will post?", "utterance_id": "banking_034", "intent": "AskAboutTransferTime"}
+{"utterance": "Hello. I would like to change my work phone number.", "utterance_id": "banking_390", "intent": "UpdatePhoneNumber"}
+{"utterance": "I would like to update my phone number on my account please. Last name Smith.", "utterance_id": "banking_400", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi, I lost my credit card yesterday on September ninth twenty twenty-one.", "utterance_id": "banking_337", "intent": "ReportLostStolenCard"}
+{"utterance": "Can you show me my spending history for the last three days?", "utterance_id": "banking_085", "intent": "CheckTransactionHistory"}
+{"utterance": "Phone change", "utterance_id": "banking_403", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi, I want to close my checking account. I have no use for it anymore.", "utterance_id": "banking_117", "intent": "CloseBankAccount"}
+{"utterance": "Yes I need to update my address. My account number is five five two eight seven seven ninety two, and my new address is two seventy, Dairy Road, Kahului, Hawaii, nine six seven three two.", "utterance_id": "banking_365", "intent": "UpdateStreetAddress"}
+{"utterance": "Hey, can I do a wire transfer? I'm trying to send like fifty thousand to another account.", "utterance_id": "banking_176", "intent": "ExternalWireTransfer"}
+{"utterance": "Hi the purchase that I made was five dollars but the receipt says it's eight dollars. I would like to dispute it.", "utterance_id": "banking_143", "intent": "DisputeCharge"}
+{"utterance": "How long will it take for me to receive my money?", "utterance_id": "banking_039", "intent": "AskAboutTransferTime"}
+{"utterance": "I want to updat my cell phone number please.", "utterance_id": "banking_399", "intent": "UpdatePhoneNumber"}
+{"utterance": "Can you help with wire transfers?", "utterance_id": "banking_168", "intent": "ExternalWireTransfer"}
+{"utterance": "Are there any daily limits on withdrawals?", "utterance_id": "banking_259", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hi could you tell me the closest physical branch to where I'm at right now? My address is seven hundred East Maple Street.", "utterance_id": "banking_224", "intent": "FindBranch"}
+{"utterance": "Hi there can you help me do just like an internal transfer between two of my accounts?", "utterance_id": "banking_289", "intent": "InternalFundsTransfer"}
+{"utterance": "Show me my savings account available balance", "utterance_id": "banking_079", "intent": "CheckAccountBalance"}
+{"utterance": "Is closing an account something that you can help with?", "utterance_id": "banking_130", "intent": "CloseBankAccount"}
+{"utterance": "Hello I would like to find the closest bank near where I live. I live in sixty-seven dash thirty-seven Rose Avenue Boston, Massachusetts.", "utterance_id": "banking_220", "intent": "FindBranch"}
+{"utterance": "Email address update", "utterance_id": "banking_368", "intent": "UpdateEmail"}
+{"utterance": "Hello, I would like to perform a wire transfer to send money from my current bank account to another bank account.", "utterance_id": "banking_174", "intent": "ExternalWireTransfer"}
+{"utterance": "Hello, I need the change my email on my account. The pin number is 5143", "utterance_id": "banking_371", "intent": "UpdateEmail"}
+{"utterance": "Do your ATMs take cash deposits? Or do I need to come in to a branch.", "utterance_id": "banking_003", "intent": "AskAboutCashDeposits"}
+{"utterance": "Tell me when the transfer will happen", "utterance_id": "banking_044", "intent": "AskAboutTransferTime"}
+{"utterance": "What's the maximum amount you are allowed to withdraw from an account?", "utterance_id": "banking_277", "intent": "GetWithdrawalLimit"}
+{"utterance": "Yeah, my card got stolen.", "utterance_id": "banking_345", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi, I'd like to transfer funds from my checking account to my savings account.", "utterance_id": "banking_293", "intent": "InternalFundsTransfer"}
+{"utterance": "When does that branch close on Mondays?", "utterance_id": "banking_030", "intent": "GetBranchHours"}
+{"utterance": "Hi I'd like to check the balance of one of my accounts.", "utterance_id": "banking_064", "intent": "CheckAccountBalance"}
+{"utterance": "Can you help me reverse a payment on statement for something I didn't buy?", "utterance_id": "banking_135", "intent": "DisputeCharge"}
+{"utterance": "Hey, I just moved houses, and can I update my address here?", "utterance_id": "banking_356", "intent": "UpdateStreetAddress"}
+{"utterance": "Yeah I was wondering if it was possible to move some money from one account to another.", "utterance_id": "banking_303", "intent": "InternalFundsTransfer"}
+{"utterance": "How long will the transfer take?", "utterance_id": "banking_040", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi there, I think I lost my credit card", "utterance_id": "banking_336", "intent": "ReportLostStolenCard"}
+{"utterance": "Hey there. I would like to find the closest ATM to my address.", "utterance_id": "banking_201", "intent": "FindATM"}
+{"utterance": "Hi I was wondering when a branch is closing today.", "utterance_id": "banking_014", "intent": "GetBranchHours"}
+{"utterance": "Good afternoon, I was wondering if you could help me find the closest ATM near my address. I live on one two nine one nine Tipton Highway. That's in the city of Clinton, Michigan.", "utterance_id": "banking_196", "intent": "FindATM"}
+{"utterance": "Can I check the balance of my listing account? My account number is nine one seven one nine four nine five.", "utterance_id": "banking_052", "intent": "CheckAccountBalance"}
+{"utterance": "Hello, can you help me perform a wire transfer? The withdrawal bank account number is six zero one nine two three nine four eight two five seven. I would like to send four hundred dollars.", "utterance_id": "banking_172", "intent": "ExternalWireTransfer"}
+{"utterance": "Hi I want to wire sixty dollars from this checking account to a different checking account.", "utterance_id": "banking_178", "intent": "ExternalWireTransfer"}
+{"utterance": "I've been waiting an hour and still haven't seen my payment go through. How long does it usually take?", "utterance_id": "banking_043", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi, I believe the most recent transaction on my account is fraud.", "utterance_id": "banking_145", "intent": "DisputeCharge"}
+{"utterance": "I need to transfer five hundred dollars from checking to savings", "utterance_id": "banking_295", "intent": "InternalFundsTransfer"}
+{"utterance": "Make a five hundred dollar transfer from savings to my checking account", "utterance_id": "banking_297", "intent": "InternalFundsTransfer"}
+{"utterance": "I need to wire some money internationally.", "utterance_id": "banking_187", "intent": "ExternalWireTransfer"}
+{"utterance": "I need to check my recent purchases", "utterance_id": "banking_091", "intent": "CheckTransactionHistory"}
+{"utterance": "Hey there, this is Marc Ramirez and I would like to open an account with you today.", "utterance_id": "banking_309", "intent": "OpenBankingAccount"}
+{"utterance": "Tell me the daily withdrawal limit from an ATM", "utterance_id": "banking_274", "intent": "GetWithdrawalLimit"}
+{"utterance": "What did I buy last week with my debit card?", "utterance_id": "banking_100", "intent": "CheckTransactionHistory"}
+{"utterance": "Hi there I'd like to set up a wire transfer from my account to an external bank. The account that I have is the one ending with five eight six six.", "utterance_id": "banking_179", "intent": "ExternalWireTransfer"}
+{"utterance": "Is it possible for me to manage my account online?", "utterance_id": "banking_256", "intent": "SetUpOnlineBanking"}
+{"utterance": "I need to dispute a charge on my credit card. Please can you help me?", "utterance_id": "banking_152", "intent": "DisputeCharge"}
+{"utterance": "Are your branches open on Saturdays?", "utterance_id": "banking_010", "intent": "GetBranchHours"}
+{"utterance": "I decided to close my credit card. I don't use it anymore. Can you help?", "utterance_id": "banking_119", "intent": "CloseBankAccount"}
+{"utterance": "Hello, I'd like to update my phone number to 714-123-6154 on my account please.", "utterance_id": "banking_389", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi, I'd like to make this quick. I want to transfer eight hundred twenty-five dollars from my account to another. The number of my account is two five four one four one two nine nine five nine nine. The account number I would like to deposit that to is four four two six nine eight eight nine seven four six one.", "utterance_id": "banking_292", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi there, I wanted to check what the withdrawal limit is for my account", "utterance_id": "banking_264", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hi there. I would like to update my cell number", "utterance_id": "banking_394", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi, good morning. I need to verify some purchases from my transaction history, can you help with that?", "utterance_id": "banking_089", "intent": "CheckTransactionHistory"}
+{"utterance": "I was hoping to quickly check my balance, can you help with that?", "utterance_id": "banking_077", "intent": "CheckAccountBalance"}
+{"utterance": "Yeah, I was going through my most recent statement and I noticed there was a transaction that I didn't make.", "utterance_id": "banking_165", "intent": "DisputeCharge"}
+{"utterance": "I'd like to update my phone number is 413-513-1234.", "utterance_id": "banking_401", "intent": "UpdatePhoneNumber"}
+{"utterance": "Good afternoon. I need to check the balance of an existing account.", "utterance_id": "banking_056", "intent": "CheckAccountBalance"}
+{"utterance": "How late will you be open tonight? I need to make an in person deposit after work", "utterance_id": "banking_017", "intent": "GetBranchHours"}
+{"utterance": "Good evening. I was wondering if you could set aside some time for me as I would like to open a new bank account.", "utterance_id": "banking_306", "intent": "OpenBankingAccount"}
+{"utterance": "I'm looking for one of your cash machines to make a quick withdrawal.", "utterance_id": "banking_213", "intent": "FindATM"}
+{"utterance": "What hours are you going to be open on Christmas Eve?", "utterance_id": "banking_025", "intent": "GetBranchHours"}
+{"utterance": "I want to update my e-mail.", "utterance_id": "banking_381", "intent": "UpdateEmail"}
+{"utterance": "Hello I've been a customer with you for many years, but I'm looking to close this account and transfer the remaining funds into my new bank account.", "utterance_id": "banking_108", "intent": "CloseBankAccount"}
+{"utterance": "Hi I'd like to dispute one of the charges on my account. The account number is one five six three three one four two one eight.", "utterance_id": "banking_139", "intent": "DisputeCharge"}
+{"utterance": "I want to deposit some cash and was wondering if it could be done at a local ATM.", "utterance_id": "banking_005", "intent": "AskAboutCashDeposits"}
+{"utterance": "Hello, can you help me wire some money to another account? I'd like to withdraw about one thousand three hundred dollars from the account number eight two one eight one nine three four five seven seven one. And then I'd like to deposit that into the account of my best friend. I believe that number is five one four seven six six three eight six zero six nine.", "utterance_id": "banking_173", "intent": "ExternalWireTransfer"}
+{"utterance": "Am I able to do online banking? Can you show me how?", "utterance_id": "banking_239", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi there can you tell me if you will be open at 7am?", "utterance_id": "banking_015", "intent": "GetBranchHours"}
+{"utterance": "Hi there I have a new address in Salt Lake city. Could you please help me update that?", "utterance_id": "banking_357", "intent": "UpdateStreetAddress"}
+{"utterance": "I need to set up an international transfer, do you allow that?", "utterance_id": "banking_186", "intent": "ExternalWireTransfer"}
+{"utterance": "Good morning I wanna close my account as I will be switching banks. My account number is three zero eight zero one seven nine zero four four nine four.", "utterance_id": "banking_107", "intent": "CloseBankAccount"}
+{"utterance": "How do I access your online banking portal?", "utterance_id": "banking_245", "intent": "SetUpOnlineBanking"}
+{"utterance": "Yeah I wanted to open up a new bank account with you guys, can we do that here?", "utterance_id": "banking_324", "intent": "OpenBankingAccount"}
+{"utterance": "Hi, I am so excited because I finally get to open account with this bank. Can you help me?", "utterance_id": "banking_314", "intent": "OpenBankingAccount"}
+{"utterance": "View transactions", "utterance_id": "banking_099", "intent": "CheckTransactionHistory"}
+{"utterance": "Can you give me your branch hours?", "utterance_id": "banking_011", "intent": "GetBranchHours"}
+{"utterance": "I wanted to check a good time to stop by one of your branches.", "utterance_id": "banking_018", "intent": "GetBranchHours"}
+{"utterance": "Good evening, can you help me transfer funds from my checking account into my savings account?", "utterance_id": "banking_281", "intent": "InternalFundsTransfer"}
+{"utterance": "I'd like help with a wire transfer.", "utterance_id": "banking_189", "intent": "ExternalWireTransfer"}
+{"utterance": "I need a checking account and debit card, can you help set up the account?", "utterance_id": "banking_321", "intent": "OpenBankingAccount"}
+{"utterance": "Yeah could you help me move some funds from one account to another? I'd like to take it out of the account that's nine nine eight seven one four four seven seven zero.", "utterance_id": "banking_301", "intent": "InternalFundsTransfer"}
+{"utterance": "Hello, I would like to check the balance of my checking account.", "utterance_id": "banking_061", "intent": "CheckAccountBalance"}
+{"utterance": "Hello, I would like to update my address. My credit card number is five two six two three two six one eight five eight five nine six three two. And my street address is sixty-three dash forty-five Seventh Avenue. City is New Haven. State is Connecticut. Zip code is one two three five six.", "utterance_id": "banking_353", "intent": "UpdateStreetAddress"}
+{"utterance": "Hello, I would like to, I'm calling because I lost my credit card. My credit card number is five two six two two three zero one four six eight five nine nine five six. And the date of loss was yesterday September thirteenth two thousand twenty-one.", "utterance_id": "banking_331", "intent": "ReportLostStolenCard"}
+{"utterance": "Do you know if your offices in Manhattan will be open tomorrow?", "utterance_id": "banking_013", "intent": "GetBranchHours"}
+{"utterance": "I have to update my email address.", "utterance_id": "banking_378", "intent": "UpdateEmail"}
+{"utterance": "What days are you open?", "utterance_id": "banking_023", "intent": "GetBranchHours"}
+{"utterance": "Yes I'd like to open a new bank account. My first name is Sarah, last name Martin, date of birth is November twelfth, two thousand and one. and social security number is two one zero nine six six three four two one. Security number sorry security question, I guess could be what is the name of my first pet and the answer would be Zingo that's Z. I. N. G. O.", "utterance_id": "banking_325", "intent": "OpenBankingAccount"}
+{"utterance": "I want to check the balance of the account numbered five three seven two nine three eight four one.", "utterance_id": "banking_074", "intent": "CheckAccountBalance"}
+{"utterance": "I need to change my business email address", "utterance_id": "banking_379", "intent": "UpdateEmail"}
+{"utterance": "I would like to change my email address", "utterance_id": "banking_384", "intent": "UpdateEmail"}
+{"utterance": "Do you have any branches in New York?", "utterance_id": "banking_218", "intent": "FindBranch"}
+{"utterance": "Hello I'm in a bit of a panic as I just lost my credit card three days ago on September eleventh. The card's number is five four oh four three seven seven nine seven five zero zero two three nine eight, and my most recent purchase was some golf clubs.", "utterance_id": "banking_329", "intent": "ReportLostStolenCard"}
+{"utterance": "Hello, I was wondering if you could help me check some transactions on my card", "utterance_id": "banking_087", "intent": "CheckTransactionHistory"}
+{"utterance": "I'd like to set up a wire transfer", "utterance_id": "banking_190", "intent": "ExternalWireTransfer"}
+{"utterance": "Hi I would like to close my current account and transfer the funds to a different account that I own. My account number to close is five five five, six nine nine seven zero seven zero and the reason for closure is I've created a new account. Deposit routing number is five zero five zero five, two six. And the deposit account number is nine five five eight six two three two five six.", "utterance_id": "banking_112", "intent": "CloseBankAccount"}
+{"utterance": "Hi it's been a really busy day and I need to transfer some funds from my wife's account into mine.", "utterance_id": "banking_288", "intent": "InternalFundsTransfer"}
+{"utterance": "Hi I just happened to notice a strange purchase on my bill that I didn't seem to make. I'm disputing this because I would never spend four thousand five hundred dollars on a computer. The purchase was made on my credit card and that number should be five two two one two two four oh eight four seven six eight one eight one.", "utterance_id": "banking_138", "intent": "DisputeCharge"}
+{"utterance": "I was wondering if the ATM will accept a deposit", "utterance_id": "banking_008", "intent": "AskAboutCashDeposits"}
+{"utterance": "Hi, My name is Mark Abby and I wanted to update my email to mabby413@gmail.com", "utterance_id": "banking_377", "intent": "UpdateEmail"}
+{"utterance": "Could you please show me how to update my street address?", "utterance_id": "banking_347", "intent": "UpdateStreetAddress"}
+{"utterance": "Hello I was wondering if it's possible to wire money to some of my relatives overseas.", "utterance_id": "banking_171", "intent": "ExternalWireTransfer"}
+{"utterance": "I'd like to be able to check statements and make payments through the app. Can you help me out?", "utterance_id": "banking_249", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hello, I want to check the balance of my account.", "utterance_id": "banking_059", "intent": "CheckAccountBalance"}
+{"utterance": "Hello I want to update my address for the account with the credit card number nine two seven five three four six eight one five three eight two zero five nine.", "utterance_id": "banking_349", "intent": "UpdateStreetAddress"}
+{"utterance": "I'm waiting for the money to show up in my account from a transfer I made. When can I expect that to happen?", "utterance_id": "banking_042", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi, yes. I'd like to make a wire transfer.", "utterance_id": "banking_182", "intent": "ExternalWireTransfer"}
+{"utterance": "Hello, I would like to update my address.", "utterance_id": "banking_352", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi, I want to find the closest Bank of America to zip code nine two four one five.", "utterance_id": "banking_230", "intent": "FindBranch"}
+{"utterance": "Hi I'd like to report a purchase on my account that I didn't make.", "utterance_id": "banking_140", "intent": "DisputeCharge"}
+{"utterance": "I'm trying to find the closest ATM.", "utterance_id": "banking_214", "intent": "FindATM"}
+{"utterance": "Hey I'm just looking to close my bank account and I want to transfer what money is left into one of my other accounts.", "utterance_id": "banking_110", "intent": "CloseBankAccount"}
+{"utterance": "I want to cancel all my cards and close my accounts with you today.", "utterance_id": "banking_120", "intent": "CloseBankAccount"}
+{"utterance": "How much can I withdraw from that account per day?", "utterance_id": "banking_267", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hi I'd like to report an unauthorized purchase on my account.", "utterance_id": "banking_141", "intent": "DisputeCharge"}
+{"utterance": "How much can I withdraw?", "utterance_id": "banking_268", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hello, I'm trying to find the closest ATM to me. I'm in Boston.", "utterance_id": "banking_200", "intent": "FindATM"}
+{"utterance": "Hello I lost my credit card, can you help me take care of it?", "utterance_id": "banking_328", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi, my credit card got stolen. it's credit card number four one four seven five six six two three two one four four four zero zero. I lost it on September third and I had most recently spent money at McDonald's.", "utterance_id": "banking_339", "intent": "ReportLostStolenCard"}
+{"utterance": "I was hoping to visit a branch and was wondering what time they close today", "utterance_id": "banking_019", "intent": "GetBranchHours"}
+{"utterance": "I wanted to confirm the balance of my savings account please.", "utterance_id": "banking_076", "intent": "CheckAccountBalance"}
+{"utterance": "Hi there, could you give me an update on what my balance is?", "utterance_id": "banking_066", "intent": "CheckAccountBalance"}
+{"utterance": "Typically, how many hours will it take for a wire transfer to post?", "utterance_id": "banking_045", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi, I made a transfer and was wondering how long it's going to take", "utterance_id": "banking_035", "intent": "AskAboutTransferTime"}
+{"utterance": "Good afternoon. Could you show me how to set up the app for online banking?", "utterance_id": "banking_243", "intent": "SetUpOnlineBanking"}
+{"utterance": "I need to update the address you have on file", "utterance_id": "banking_362", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi there, can you tell me when a local branch will open today?", "utterance_id": "banking_016", "intent": "GetBranchHours"}
+{"utterance": "See latest transactions", "utterance_id": "banking_095", "intent": "CheckTransactionHistory"}
+{"utterance": "See transactions", "utterance_id": "banking_096", "intent": "CheckTransactionHistory"}
+{"utterance": "I wanted to know how much the last charge was on my debit card.", "utterance_id": "banking_094", "intent": "CheckTransactionHistory"}
+{"utterance": "Hi, I'd like to report suspicious activity. Someone bought like six hundred dollars'worth of food that I did not spend from my account.", "utterance_id": "banking_148", "intent": "DisputeCharge"}
+{"utterance": "I want to close my savings account. I just don't need it anymore.", "utterance_id": "banking_123", "intent": "CloseBankAccount"}
+{"utterance": "I need to move some money from savings to checking, can you help?", "utterance_id": "banking_294", "intent": "InternalFundsTransfer"}
+{"utterance": "Someone billed me for something I didn't receive. Can we reverse the transaction?", "utterance_id": "banking_162", "intent": "DisputeCharge"}
+{"utterance": "Update to a new phone number.", "utterance_id": "banking_406", "intent": "UpdatePhoneNumber"}
+{"utterance": "Can you help me set up a new bank account with you?", "utterance_id": "banking_305", "intent": "OpenBankingAccount"}
+{"utterance": "I left my card at a restaurant and I think it was stolen. What can I do?", "utterance_id": "banking_340", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi there, I'm trying to locate one of your branches. Can you help me with that?", "utterance_id": "banking_227", "intent": "FindBranch"}
+{"utterance": "Hi, I was checking my bank activity today and I saw there was a purchase I did not intend to make.", "utterance_id": "banking_147", "intent": "DisputeCharge"}
+{"utterance": "Would you be able to transfer two thousand from my checking account to my savings account?", "utterance_id": "banking_300", "intent": "InternalFundsTransfer"}
+{"utterance": "Hello my credit card has been stolen.", "utterance_id": "banking_330", "intent": "ReportLostStolenCard"}
+{"utterance": "I want to update my email to kburton515@gmail.com", "utterance_id": "banking_383", "intent": "UpdateEmail"}
+{"utterance": "Can I change my email address?", "utterance_id": "banking_367", "intent": "UpdateEmail"}
+{"utterance": "What's the max amount I can withdraw?", "utterance_id": "banking_276", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hello, I want to update the address associated with my accounts.", "utterance_id": "banking_351", "intent": "UpdateStreetAddress"}
+{"utterance": "I moved and need you to help me update the address", "utterance_id": "banking_360", "intent": "UpdateStreetAddress"}
+{"utterance": "Hi I'd like to check the balance of my account.", "utterance_id": "banking_063", "intent": "CheckAccountBalance"}
+{"utterance": "I don't recognize the most recent purchase on my account for two dollars and thirty-one cents.", "utterance_id": "banking_149", "intent": "DisputeCharge"}
+{"utterance": "Yes, I'd like to update my address. My street address now is five five five N. King Street, Honolulu, Hawaii.", "utterance_id": "banking_366", "intent": "UpdateStreetAddress"}
+{"utterance": "I returned something but the money was never credited to my account. Can I dispute the original charge?", "utterance_id": "banking_154", "intent": "DisputeCharge"}
+{"utterance": "Check balance", "utterance_id": "banking_055", "intent": "CheckAccountBalance"}
+{"utterance": "I'd like to be able to make transfers and check statements through the app. How do I set up online banking?", "utterance_id": "banking_250", "intent": "SetUpOnlineBanking"}
+{"utterance": "Are there any limits on the amount I can withdraw?", "utterance_id": "banking_260", "intent": "GetWithdrawalLimit"}
+{"utterance": "Someone charged me the wrong amount for a skirt I bought and I'd like to cancel the charge.", "utterance_id": "banking_163", "intent": "DisputeCharge"}
+{"utterance": "How many hours does it take for an international transfer to go through?", "utterance_id": "banking_041", "intent": "AskAboutTransferTime"}
+{"utterance": "Was wondering when this payment will go through", "utterance_id": "banking_046", "intent": "AskAboutTransferTime"}
+{"utterance": "Hi, could you get me the closest branch to my current location? Right now I'm in Gardena, California.", "utterance_id": "banking_229", "intent": "FindBranch"}
+{"utterance": "What's the withdrawal limit?", "utterance_id": "banking_278", "intent": "GetWithdrawalLimit"}
+{"utterance": "How much money do I have in my checking account right now?", "utterance_id": "banking_072", "intent": "CheckAccountBalance"}
+{"utterance": "I want to close my accounts with your bank effective immediately. I'm done with this terrible customer service.", "utterance_id": "banking_122", "intent": "CloseBankAccount"}
+{"utterance": "Hi I'd like to close one of my accounts and wire transfer the remaining funds to a different account.", "utterance_id": "banking_113", "intent": "CloseBankAccount"}
+{"utterance": "Hi, I want to transfer funds from my checking account to my savings account.", "utterance_id": "banking_290", "intent": "InternalFundsTransfer"}
+{"utterance": "Show me my most recent transactions please", "utterance_id": "banking_097", "intent": "CheckTransactionHistory"}
+{"utterance": "Hello there. I've been waiting for a few hours and my payment still hasn't gone through. How long does it take?", "utterance_id": "banking_032", "intent": "AskAboutTransferTime"}
+{"utterance": "Can I do a wire transfer to another account? Yeah so my current account is zero one nine one nine two nine four and I wanna send nine hundred dollars to nine nine zero five eight eight ninety-one.", "utterance_id": "banking_166", "intent": "ExternalWireTransfer"}
+{"utterance": "I was wondering if you'd be able to help me close my checking account", "utterance_id": "banking_124", "intent": "CloseBankAccount"}
+{"utterance": "Hello I want to send money to a bank account overseas.", "utterance_id": "banking_170", "intent": "ExternalWireTransfer"}
+{"utterance": "I'd like to set up online banking", "utterance_id": "banking_252", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi this is Mary O'Neal and I am trying to open up an account with you. Could you help me with that?", "utterance_id": "banking_313", "intent": "OpenBankingAccount"}
+{"utterance": "Are cash deposits allowed at your ATMs?", "utterance_id": "banking_000", "intent": "AskAboutCashDeposits"}
+{"utterance": "How do I set up a bank account with you?", "utterance_id": "banking_320", "intent": "OpenBankingAccount"}
+{"utterance": "I'm pretty sure I lost my debit card and would like it to be canceled", "utterance_id": "banking_342", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi I wanna find the closest ATM to Nashville, Tennessee.", "utterance_id": "banking_204", "intent": "FindATM"}
+{"utterance": "What is the usual wait time for a transfer?", "utterance_id": "banking_047", "intent": "AskAboutTransferTime"}
+{"utterance": "I was wondering if I could ask a question. Do you take cash deposits at ATMs?", "utterance_id": "banking_007", "intent": "AskAboutCashDeposits"}
+{"utterance": "Can you help me transfer three thousand dollars from my checking account to savings account?", "utterance_id": "banking_280", "intent": "InternalFundsTransfer"}
+{"utterance": "Can you how long my transfer will take to go through?", "utterance_id": "banking_031", "intent": "AskAboutTransferTime"}
+{"utterance": "Transfer funds to other accounts.", "utterance_id": "banking_133", "intent": "CloseBankAccount"}
+{"utterance": "How much am I allowed to take out of my account on a given day?", "utterance_id": "banking_266", "intent": "GetWithdrawalLimit"}
+{"utterance": "Hi I'd like to find the closest physical location of this bank near me. I live like ten seventy-one Alamoana Boulevard in Honolulu Hawaii.", "utterance_id": "banking_226", "intent": "FindBranch"}
+{"utterance": "I need to update my cell", "utterance_id": "banking_397", "intent": "UpdatePhoneNumber"}
+{"utterance": "Good evening, I was wondering if we can make this fast. I need to transfer some funds from my account into another.", "utterance_id": "banking_282", "intent": "InternalFundsTransfer"}
+{"utterance": "Can you help me cancel my credit card?", "utterance_id": "banking_104", "intent": "CloseBankAccount"}
+{"utterance": "Good afternoon. I just wanted to report that a credit card has been stolen. The credit card number is one five eight nine two eight nine one eight five zero one nine two eight three. And I lost it on August twentieth twenty twenty-one. And this is while I was shopping.", "utterance_id": "banking_327", "intent": "ReportLostStolenCard"}
+{"utterance": "Hi this is Charles Brown, and I was interested in opening up an account with you guys.", "utterance_id": "banking_312", "intent": "OpenBankingAccount"}
+{"utterance": "I'm just, I need some help with a transaction that I didn't mean to make can you help me with that?", "utterance_id": "banking_161", "intent": "DisputeCharge"}
+{"utterance": "Hello, I'd like to find the branch that's closest to me.", "utterance_id": "banking_222", "intent": "FindBranch"}
+{"utterance": "Hi, I'd like to make a wire transfer of five hundred dollars to another bank.", "utterance_id": "banking_181", "intent": "ExternalWireTransfer"}
+{"utterance": "When can I expect the money to be transferred?", "utterance_id": "banking_051", "intent": "AskAboutTransferTime"}
+{"utterance": "Help with an internal transfer", "utterance_id": "banking_286", "intent": "InternalFundsTransfer"}
+{"utterance": "Do you have an iPhone app for online banking?", "utterance_id": "banking_241", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hello I need to perform a wire transfer I want to send four hundred dollars, the withdraw bank account number is six six seven zero three four eight nine one seven two eight.", "utterance_id": "banking_169", "intent": "ExternalWireTransfer"}
+{"utterance": "Hello I would like to update my address. My credit card number is five two six two three three six nine eight six seven nine five two five two and my street address is eighty-six dash thirteen Rose Avenue, Newhaven, Connecticut. one zero zero two five.", "utterance_id": "banking_350", "intent": "UpdateStreetAddress"}
+{"utterance": "How long do I have to wait for my transfer to be completed successfully?", "utterance_id": "banking_037", "intent": "AskAboutTransferTime"}
+{"utterance": "Hello. My name is Kelly. I'd like to update my business's email to kcarlton12233@gmail.com.", "utterance_id": "banking_373", "intent": "UpdateEmail"}
+{"utterance": "What's the typical time it takes for a transfer to take effect?", "utterance_id": "banking_050", "intent": "AskAboutTransferTime"}
+{"utterance": "I want to dispute a charge", "utterance_id": "banking_158", "intent": "DisputeCharge"}
+{"utterance": "I wanted to check the balance of my credit card please", "utterance_id": "banking_075", "intent": "CheckAccountBalance"}
+{"utterance": "Hello I'd like to open a bank account.", "utterance_id": "banking_308", "intent": "OpenBankingAccount"}
+{"utterance": "I need to update my mailing address for my account", "utterance_id": "banking_361", "intent": "UpdateStreetAddress"}
+{"utterance": "Max withdrawal amount", "utterance_id": "banking_272", "intent": "GetWithdrawalLimit"}
+{"utterance": "I'm moving and am switching to a bank with local branches. Can you help me close out my accounts?", "utterance_id": "banking_128", "intent": "CloseBankAccount"}
+{"utterance": "Hi, I want to open a new checking account.", "utterance_id": "banking_316", "intent": "OpenBankingAccount"}
+{"utterance": "What time will my payment post?", "utterance_id": "banking_048", "intent": "AskAboutTransferTime"}
+{"utterance": "My name is John and I need to change the email for my account.", "utterance_id": "banking_386", "intent": "UpdateEmail"}
+{"utterance": "Hi I'd like to update my phone number to 512-124-5131", "utterance_id": "banking_392", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hi there so there's a transaction from September third twenty twenty-one that I did not authorize. So I just wanted to report that. It was fifty-seven dollars and eighty-six cents.", "utterance_id": "banking_144", "intent": "DisputeCharge"}
+{"utterance": "How much do I have right now in savings", "utterance_id": "banking_071", "intent": "CheckAccountBalance"}
+{"utterance": "You offer online banking, right? How do I set it up?", "utterance_id": "banking_258", "intent": "SetUpOnlineBanking"}
+{"utterance": "Hi I want to close my checking account at Bank of America. I just don't need it anymore.", "utterance_id": "banking_111", "intent": "CloseBankAccount"}
+{"utterance": "Need to make an internal transfer", "utterance_id": "banking_298", "intent": "InternalFundsTransfer"}
+{"utterance": "I need a domestic wire transfer, can you help with that?", "utterance_id": "banking_183", "intent": "ExternalWireTransfer"}
+{"utterance": "Hi there, my name is Craig Morkanth and I would like to set up online banking.", "utterance_id": "banking_244", "intent": "SetUpOnlineBanking"}
+{"utterance": "I saw a charge on my statement that I definitely didn't approve", "utterance_id": "banking_155", "intent": "DisputeCharge"}
+{"utterance": "Hi, I would like to find the closest ATM to me.", "utterance_id": "banking_207", "intent": "FindATM"}
+{"utterance": "I want to manage my account myself. How do I set up the app for this?", "utterance_id": "banking_248", "intent": "SetUpOnlineBanking"}
+{"utterance": "Can you please just tell me the ATM withdrawal limit?", "utterance_id": "banking_261", "intent": "GetWithdrawalLimit"}
+{"utterance": "Please close my credit card ending in five two four six", "utterance_id": "banking_132", "intent": "CloseBankAccount"}
+{"utterance": "Is your branch open on Thanksgiving?", "utterance_id": "banking_020", "intent": "GetBranchHours"}
+{"utterance": "Looking for the closest ATM, can you look that up for me?", "utterance_id": "banking_215", "intent": "FindATM"}
+{"utterance": "Hello, I need to update my phone you have on file", "utterance_id": "banking_388", "intent": "UpdatePhoneNumber"}
+{"utterance": "Hello can you direct me to the closest ATM to me? I'm in Los Angeles California.", "utterance_id": "banking_197", "intent": "FindATM"}

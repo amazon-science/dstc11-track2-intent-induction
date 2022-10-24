@@ -6,6 +6,7 @@ from scipy.optimize import linear_sum_assignment
 from sklearn.metrics import normalized_mutual_info_score, adjusted_rand_score, precision_recall_fscore_support
 from sklearn.utils.multiclass import unique_labels
 
+from sitod.constants import MetricNames
 from sitod.data import TurnPrediction, Intent
 
 
@@ -328,9 +329,9 @@ def clustering_info(
     one_to_one_alignment = compute_optimal_alignment(cluster_labels, reference_labels)
 
     metrics = {
-        '1:1 Alignment': one_to_one_alignment,
-        'Cluster:Ref Many:1 Alignment': cluster_alignment,
-        'Ref:Cluster Many:1 Alignment': ref_alignment,
+        MetricNames.ALIGNMENT_1_TO_1: one_to_one_alignment,
+        MetricNames.ALIGNMENT_CLUSTER_REF_MANY_TO_1: cluster_alignment,
+        MetricNames.ALIGNMENT_REF_CLUSTER_MANY_TO_1: ref_alignment,
     }
     return metrics
 
@@ -366,10 +367,10 @@ def compute_metrics_from_turn_predictions(
 
     # classification metrics for different alignments
     alignment = compute_optimal_alignment(cluster_labels, reference_labels)
-    metrics['Classification 1:1'] = classification_metrics(align_labels(cluster_labels, alignment,
+    metrics[MetricNames.CLASSIFICATION_1_TO_1] = classification_metrics(align_labels(cluster_labels, alignment,
                                                                         default_label='N/A'), reference_labels)
     alignment = compute_many_to_one_alignment(cluster_labels, reference_labels)
-    metrics['Classification Many:1'] = classification_metrics(align_labels(cluster_labels, alignment,
+    metrics[MetricNames.CLASSIFICATION_MANY_TO_1] = classification_metrics(align_labels(cluster_labels, alignment,
                                                                            default_label='N/A'), reference_labels)
 
     metrics.update(clustering_info(cluster_labels, reference_labels))

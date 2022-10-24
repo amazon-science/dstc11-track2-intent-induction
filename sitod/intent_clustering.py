@@ -18,11 +18,11 @@ from hyperopt import STATUS_OK, Trials, fmin, tpe, STATUS_FAIL
 from hyperopt.early_stop import no_progress_loss
 from hyperopt.pyll import scope
 from numpy import ndarray, argmax
-from sentence_transformers import SentenceTransformer
 from sklearn import metrics
 from sklearn.cluster import KMeans, DBSCAN, OPTICS
 
-from sitod.data import DialogueDataset
+from sitod.data import DialogueDataset, read_turn_predictions
+from sitod.sentence_embedding_model import SentenceEmbeddingModel
 
 logger = logging.getLogger(__name__)
 
@@ -296,32 +296,6 @@ class HyperoptTunedClusteringAlgorithm(ClusteringAlgorithm):
         return ClusterData(trials.best_trial['result']['labels'])
 
 
-class SentenceEmbeddingModel(Registrable):
-    def encode(self, utterances: List[str]) -> np.ndarray:
-        """
-        Encode a list of utterances as an array of real-valued vectors.
-        :param utterances: original utterances
-        :return: output encoding
-        """
-        raise NotImplementedError
-
-
-@SentenceEmbeddingModel.register('sentence_transformers_model')
-class SentenceTransformersModel(SentenceEmbeddingModel):
-
-    def __init__(self, model_name_or_path: str) -> None:
-        """
-        Initialize SentenceTransformers model for a given path or model name.
-        :param model_name_or_path: model name or path for SentenceTransformers sentence encoder
-        """
-        super().__init__()
-        self._sentence_transformer = model_name_or_path
-
-    def encode(self, utterances: List[str]) -> np.ndarray:
-        encoder = SentenceTransformer(self._sentence_transformer)
-        return encoder.encode(utterances)
-
-
 @IntentClusteringModel.register('baseline_intent_clustering_model')
 class BaselineIntentClusteringModel(IntentClusteringModel):
 
@@ -361,6 +335,44 @@ class BaselineIntentClusteringModel(IntentClusteringModel):
         result = self._clustering_algorithm.cluster(context)
         # map turn IDs to cluster labels
         return {turn_id: str(label) for turn_id, label in zip(turn_ids, result.clusters)}
+
+
+@IntentClusteringModel.register('external_predictions_intent_clustering_model')
+class ExternalPredictionsIntentClusteringModel(IntentClusteringModel):
+    """
+    Intent clustering model that simply reads from pre-existing predictions.
+    """
+
+    def __init__(self, predictions_file_name: str = 'predictions.json') -> None:
+        """
+        Initialize with file name.
+
+        :param predictions_file_name: prediction file path relative to experiment directory
+        """
+        super().__init__()
+        self._predictions_file_name = predictions_file_name
+
+    def cluster_intents(self, context: IntentClusteringContext) -> Dict[str, str]:
+        if Path(self._predictions_file_name).is_absolute():
+            predictions_path = Path(self._predictions_file_name)
+        else:
+            predictions_path = context.output_dir / self._predictions_file_name
+        if not predictions_path.exists():
+            logger.warning(f'No predictions found at {predictions_path}')
+        preds = read_turn_predictions(predictions_path)
+        result = {}
+        for pred in preds:
+            result[pred.turn_id] = pred.predicted_label
+        default_label_turns = set()
+        for turn in context.intent_turn_ids:
+            if turn not in result:
+                default_label_turns.add(turn)
+                result[turn] = '-1'  # default label if missing
+        if default_label_turns:
+            logger.warning(f'Assigning default label (-1) to turns missing predictions: '
+                           f'{sorted(default_label_turns)[:10]}...')
+
+        return result
 
 
 @SentenceEmbeddingModel.register('caching_sentence_embedding_model')
