@@ -17,6 +17,7 @@ Yi Zhang
 **Contact:** dstc11-intent-induction (AT) amazon (DOT) com
 
 ## News
+* **November 8th** - Call for DSTC11 workshop papers [announced](https://dstc11.dstc.community/calls/call-for-dstc11-workshop-papers)
 * **September 26th** - Test conversations released!
   * Two domains: [Banking](/dstc11/test-banking) and [Finance](/dstc11/test-finance)
   * [Submission form](https://forms.gle/m2NWYm22LGGyEYtn9) open until **October 3rd, 2022 (11:59pm Anywhere on Earth UTC-12)** 
@@ -26,12 +27,14 @@ Yi Zhang
   * [Task 2 Submissions](/dstc11/dstc11-submissions/2) and [Results](https://docs.google.com/spreadsheets/d/15K3vBDfAj_fzqK988rrESRuk4MTgyIOKIarKGZpGja4/edit?usp=sharing)
 ## Timeline
 
-* Development data release: June 13, 2022
+* Development data release: June 13th, 2022
 * Test data release: September 26th, 2022
 * Entry submission deadline: October 3rd, 2022
 * Final result announcement: October 24th, 2022
-* Paper submission: Middle of November
-* Workshop: February or March 2023
+* [Paper submission](https://dstc11.dstc.community/calls/call-for-dstc11-workshop-papers): December 2nd, 2022
+* Paper acceptance notification: January 20th, 2023
+* Camera-ready submission deadline: January 27th, 2023
+* DSTC11 Workshop: TBD (likely June-August 2023)
 
 ## DSTC11 Track 2 Tasks
 * See [Task 1 - Intent Clustering](/dstc11/task1-intent-clustering.md) for more details on Task 1.
