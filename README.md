@@ -17,6 +17,8 @@ Yi Zhang
 **Contact:** dstc11-intent-induction (AT) amazon (DOT) com
 
 ## News
+* **April 25th** - Details about the track and submissions can now be found in the [Track Overview Paper](https://arxiv.org/abs/2304.12982)
+* **April 17th** - The DSTC11 workshop will take place at [SIGDIAL x INLG 2023](https://www.sigdial.org/), Sept. 11-15th 
 * **November 8th** - Call for DSTC11 workshop papers [announced](https://dstc11.dstc.community/calls/call-for-dstc11-workshop-papers)
 * **September 26th** - Test conversations released!
   * Two domains: [Banking](/dstc11/test-banking) and [Finance](/dstc11/test-finance)
@@ -34,7 +36,7 @@ Yi Zhang
 * [Paper submission](https://dstc11.dstc.community/calls/call-for-dstc11-workshop-papers): December 2nd, 2022
 * Paper acceptance notification: January 20th, 2023
 * Camera-ready submission deadline: January 27th, 2023
-* DSTC11 Workshop: TBD (likely June-August 2023)
+* DSTC11 Workshop: [SIGDIAL x INLG 2023](https://www.sigdial.org/), September 11-15th, 2023 
 
 ## DSTC11 Track 2 Tasks
 * See [Task 1 - Intent Clustering](/dstc11/task1-intent-clustering.md) for more details on Task 1.
@@ -63,6 +65,7 @@ python3 -m sitod.run_experiment \
 
 ## Important Links
 
+* [Track Overview Paper](https://arxiv.org/abs/2304.12982)
 * [Track Proposal](https://drive.google.com/file/d/1itlby2Ypq3sRVtOY1alr3ygjPZZdB2TT/view)
 * [Challenge Registration](https://forms.gle/e2qVGPPAhpp8Upt8A)
 * [DSTC11 Website](https://dstc11.dstc.community/)
@@ -75,4 +78,16 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This project is licensed under the Apache-2.0 License.
+
+Please cite the following paper if using the tasks or datasets from this track in your work:
+```bibtex
+@misc{gung2023intent,
+      title={Intent Induction from Conversations for Task-Oriented Dialogue Track at DSTC 11}, 
+      author={James Gung and Raphael Shu and Emily Moeng and Wesley Rose and Salvatore Romeo and Yassine Benajiba and Arshit Gupta and Saab Mansour and Yi Zhang},
+      year={2023},
+      eprint={2304.12982},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
