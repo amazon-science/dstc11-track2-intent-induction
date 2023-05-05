@@ -70,6 +70,7 @@ python3 -m sitod.run_experiment \
 * [Challenge Registration](https://forms.gle/e2qVGPPAhpp8Upt8A)
 * [DSTC11 Website](https://dstc11.dstc.community/)
 * [DSTC Mailing List](https://groups.google.com/a/dstc.community/forum/#!forum/list/join)
+* [NatCS: Eliciting Natural Customer Support Dialogues](https://arxiv.org/abs/2305.03007)
 
 ## Security
 
@@ -79,8 +80,16 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 This project is licensed under the Apache-2.0 License.
 
-Please cite the following paper if using the tasks or datasets from this track in your work:
+Please cite the following papers if using the tasks, code, or data from this track in your work:
 ```bibtex
+@misc{gung2023natcs,
+      title={NatCS: Eliciting Natural Customer Support Dialogues}, 
+      author={James Gung and Emily Moeng and Wesley Rose and Arshit Gupta and Yi Zhang and Saab Mansour},
+      year={2023},
+      eprint={2305.03007},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 @misc{gung2023intent,
       title={Intent Induction from Conversations for Task-Oriented Dialogue Track at DSTC 11}, 
       author={James Gung and Raphael Shu and Emily Moeng and Wesley Rose and Salvatore Romeo and Yassine Benajiba and Arshit Gupta and Saab Mansour and Yi Zhang},
